@@ -108,8 +108,6 @@ function App() {
     );
   }, [auctions]);
 
-  console.log("auctions", auctions);
-
   const [currentUser, setCurrentUser] = useState<{
     role: Role;
 

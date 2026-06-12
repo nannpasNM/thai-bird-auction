@@ -1,8 +1,5 @@
 const connection = require("../config/db");
 
-/**
- * 🔥 ดึง auctions (ต้องมี state + winner + currentBid)
- */
 const findAll = () => {
   return new Promise((resolve, reject) => {
     const sql = `
@@ -28,9 +25,6 @@ const findAll = () => {
   });
 };
 
-/**
- * 🔥 สร้าง auction (ต้อง set state = live + init bid)
- */
 const create = (auction) => {
   return new Promise((resolve, reject) => {
     const sql = `
